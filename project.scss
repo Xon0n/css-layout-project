@@ -1,0 +1,114 @@
+
+:root{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: hsl(0, 0%, 81%);
+    font-size: 13px;
+}
+
+img{
+    height: 40px;
+    width: 40px;
+}
+
+
+body{
+    background-color: rgb(175, 184, 192);
+
+}
+#daniel{
+    background-color: hsl(263, 55%, 52%) ;
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    grid-area: one;   
+}
+#jona{
+   background-color: hsl(217, 19%, 35%);
+   margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    grid-area: tow;  
+
+}
+#patrick{
+    background-color:hsl(219, 29%, 14%);
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    grid-area: four;  
+
+}
+#kira{
+    color: hsl(219, 29%, 14%);
+    background-color:hsl(0, 0%, 100%) ;
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    grid-area: five;
+
+
+}
+#jeane{
+    
+    background-color:hsl(0, 0%, 100%) ;
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    color: hsl(219, 29%, 14%);
+    grid-area: three;
+
+}
+#jeane div{
+    color: hsl(219, 29%, 14%);
+}
+.border{
+    border-radius: 100%;
+}
+p{
+    text-align: center;
+    color: black;
+}
+.border{
+    border: 5px rgba(255, 140, 255, 0.75) solid;
+}
+#main{
+
+    grid-auto-columns: 1fr;
+    grid-template-areas: 
+"one"
+"tow"
+"tree"
+"four"
+"five";
+
+}
+@media(min-width:50em){
+    
+
+    #main{
+        display: grid;
+        grid-template-areas:
+        "one one tow five"
+        "three four four five" ;
+        //the under lines are another way to compile this layout
+    //     grid-template-columns: repeat(4, 3fr);
+ 
+//     .span-1{
+//         grid-column: span 2;
+//     }
+//     #kira{
+//         grid-column-start: 4;
+//         grid-column-end: 5;
+//         grid-row-start:1 ;
+//         grid-row-end:3 ;
+//     }
+        
+
+}
+}
+
+#main div div{
+    display: inline-block;
+    margin-left: 0.5rem;
+    position: absolute;
+}
